@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
   ) => {
     e.preventDefault();
     setActiveItem(item);
-    setIsMobileMenuOpen(false); // Закрываем мобильное меню при клике
+    setIsMobileMenuOpen(false);
     
     const path = NAVIGATION_PATHS[item] || '/';
     

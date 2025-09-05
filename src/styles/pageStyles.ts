@@ -1,4 +1,3 @@
-// Данные навигации
 export const navigationData = {
   home: "Главная",
   about: "Обо мне",
@@ -7,14 +6,13 @@ export const navigationData = {
   contacts: "Контакты"
 };
 
-// Общие стили для контента страниц
 export const pageStyles = {
   content: {
     padding: "60px 20px",
     textAlign: "center" as const,
     maxWidth: "1200px",
     margin: "0 auto",
-    minHeight: "calc(100vh - 60px)" // Учитываем высоту хедера
+    minHeight: "calc(100vh - 60px)"
   },
   title: {
     fontSize: "2.5rem",
