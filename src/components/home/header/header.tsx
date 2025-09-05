@@ -29,6 +29,8 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
     return saved || "home";
   });
 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     localStorage.setItem('activeNavItem', activeItem);
   }, [activeItem]);
@@ -54,11 +56,16 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
   ) => {
     e.preventDefault();
     setActiveItem(item);
+    setIsMobileMenuOpen(false); // Закрываем мобильное меню при клике
     
     const path = NAVIGATION_PATHS[item] || '/';
     
     window.history.pushState({}, '', path);
     window.dispatchEvent(new PopStateEvent('popstate'));
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const renderNavItem = (key: string, href: string, label: string) => (
@@ -80,6 +87,19 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
           <a href="./"><span className={cl.logo}>FD</span></a>
           <a href="./" className={cl.logo__text}><span>Frontend Developer</span></a>
         </nav>
+        
+        {/* Бургер-меню кнопка */}
+        <button 
+          className={`${cl.burger} ${isMobileMenuOpen ? cl.burger_active : ''}`}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        {/* Десктопное меню */}
         <section className={cl.header__section}>
           <ul>
             {renderNavItem("home", "./", headerData.header.home)}
@@ -89,6 +109,17 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
             {renderNavItem("contacts", "./contacts", headerData.header.contacts)}
           </ul>
         </section>
+
+        {/* Мобильное меню */}
+        <div className={`${cl.mobile__menu} ${isMobileMenuOpen ? cl.mobile__menu_open : ''}`}>
+          <ul>
+            {renderNavItem("home", "./", headerData.header.home)}
+            {renderNavItem("about", "./about", headerData.header.about)}
+            {renderNavItem("skills", "./skills", headerData.header.skills)}
+            {renderNavItem("project", "./project", headerData.header.project)}
+            {renderNavItem("contacts", "./contacts", headerData.header.contacts)}
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -90,3 +90,112 @@
   color: rgb(30, 71, 160);
   transition: 0.3s;
 }
+
+/* Адаптивность для Stack */
+@media (max-width: 768px) {
+  .stack {
+    padding: 30px 15px;
+  }
+  
+  .stack h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .stack p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .stack__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .stack__react,
+  .stack__typescript,
+  .stack__javascript,
+  .stack__html,
+  .stack__css,
+  .stack__scss {
+    padding: 20px 15px;
+    min-height: 100px;
+  }
+  
+  .stack__react h3,
+  .stack__typescript h3,
+  .stack__javascript h3,
+  .stack__html h3,
+  .stack__css h3,
+  .stack__scss h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .stack__react p,
+  .stack__typescript p,
+  .stack__javascript p,
+  .stack__html p,
+  .stack__css p,
+  .stack__scss p {
+    font-size: 12px;
+  }
+  
+  .stack__button {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stack {
+    padding: 20px 10px;
+  }
+  
+  .stack h2 {
+    font-size: 20px;
+  }
+  
+  .stack p {
+    font-size: 14px;
+  }
+  
+  .stack__container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .stack__react,
+  .stack__typescript,
+  .stack__javascript,
+  .stack__html,
+  .stack__css,
+  .stack__scss {
+    padding: 15px 12px;
+    min-height: 80px;
+  }
+  
+  .stack__react h3,
+  .stack__typescript h3,
+  .stack__javascript h3,
+  .stack__html h3,
+  .stack__css h3,
+  .stack__scss h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  
+  .stack__react p,
+  .stack__typescript p,
+  .stack__javascript p,
+  .stack__html p,
+  .stack__css p,
+  .stack__scss p {
+    font-size: 11px;
+  }
+  
+  .stack__button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}

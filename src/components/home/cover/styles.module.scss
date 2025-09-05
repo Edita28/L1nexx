@@ -52,8 +52,9 @@
     display: flex;
     gap: 24px;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
-
+    width: 100%;
 }
 
 .Cover__button_container button{
@@ -180,4 +181,111 @@
     font-weight: 340;
     text-align: center;
     white-space: pre-wrap
+}
+
+/* Адаптивность для Cover */
+@media (max-width: 768px) {
+    .Cover {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+    
+    .Cover__container {
+        width: 90%;
+        gap: 30px;
+    }
+    
+    .Cover__info {
+        height: auto;
+        gap: 20px;
+    }
+    
+    .Cover__container img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .Cover__nickname {
+        font-size: 24px;
+    }
+    
+    .Cover__job {
+        font-size: 20px;
+    }
+    
+    .Cover__text {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    
+    .Cover__button_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .Cover__button_container button {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .Cover__cards {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+        height: auto;
+    }
+    
+    .Cover__cards_code,
+    .Cover__cards_design,
+    .Cover__cards_education {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Cover__container {
+        width: 95%;
+    }
+    
+    .Cover__container img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .Cover__nickname {
+        font-size: 20px;
+    }
+    
+    .Cover__job {
+        font-size: 16px;
+    }
+    
+    .Cover__text {
+        font-size: 12px;
+    }
+    
+    .Cover__cards_code,
+    .Cover__cards_design,
+    .Cover__cards_education {
+        min-height: 120px;
+    }
+    
+    .Cover__cards_code h2,
+    .Cover__cards_design h2,
+    .Cover__cards_education h2 {
+        font-size: 16px;
+    }
+    
+    .Cover__cards_code p,
+    .Cover__cards_design p,
+    .Cover__cards_education p {
+        font-size: 13px;
+    }
 }
