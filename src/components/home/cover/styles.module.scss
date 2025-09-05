@@ -1,0 +1,47 @@
+.Cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 864px;
+}
+
+.Cover__container{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+}
+
+.Cover__container img{
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+}
+
+.Cover__info{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cover__nickname{
+    font-size: 30px;
+}
+.Cover__job{
+    font-weight: 350;
+    color: rgb(75 85 99);
+    font-size: 30px;
+}
+
+.Cover__text{
+    display: flex;
+    margin-top: 40px;
+    font-size: 17px;
+    white-space: pre-wrap;
+    text-align: center;
+    color: rgb(107 114 128);
+}
