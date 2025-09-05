@@ -2,6 +2,7 @@ import { Header } from "../home/header/header";
 import { ContentTransition } from "../transitions/ContentTransition";
 import cl from "../transitions/styles.module.scss";
 
+// Данные навигации
 const headerData = {
   home: "Главная",
   about: "Обо мне",
@@ -10,6 +11,7 @@ const headerData = {
   contacts: "Контакты"
 };
 
+// Стили для контента
 const contentStyles = {
   padding: "60px 20px",
   textAlign: "center" as const,
@@ -32,6 +34,7 @@ const subtitleStyles = {
   lineHeight: "1.6"
 };
 
+// Страница "Проекты"
 export const Projects = () => {
   return (
     <div>

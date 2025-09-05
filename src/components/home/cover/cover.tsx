@@ -29,6 +29,7 @@ export const Cover: React.FC<CoverProps> = (props = defaultCoverData) => {
     const handleNavigation = (path: string) => {
         window.history.pushState({}, '', path);
         window.dispatchEvent(new PopStateEvent('popstate'));
+        
     };
 
     return(

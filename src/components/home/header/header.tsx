@@ -62,6 +62,7 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
     
     window.history.pushState({}, '', path);
     window.dispatchEvent(new PopStateEvent('popstate'));
+    
   };
 
   const toggleMobileMenu = () => {

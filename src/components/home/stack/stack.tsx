@@ -20,6 +20,7 @@ const defaultStackData: StackProps = {
 const handleNavigation = (path: string) => {
     window.history.pushState({}, '', path);
     window.dispatchEvent(new PopStateEvent('popstate'));
+    
 };
 
 export const Stack: React.FC<StackProps> = (props = defaultStackData) => {
