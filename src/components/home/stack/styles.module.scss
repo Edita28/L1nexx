@@ -1,0 +1,92 @@
+
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.stack h2{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.stack p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(75 85 99);
+  font-weight: 350;
+}
+
+.stack__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.stack__container section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 150px;
+  height: 92px;
+  background-color: rgb(249 250 251);
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.stack__container section h3 {
+  margin-top: 10px;
+  line-height: 0;
+  font-size: 24px;
+}
+
+.stack__react{
+  color: rgb(59, 130, 246)
+}
+.stack__typescript{
+  color: rgb(37, 99, 235)
+}
+.stack__javascript{
+  color: rgb(234, 179, 8)
+}
+.stack__html{
+  color: rgb(249, 115, 22)
+}
+.stack__css{
+  color: rgb(96, 165, 250)
+}
+.stack__scss{
+  color: rgb(236, 72, 153)
+}
+.stack__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  color: rgb(37, 99, 235);
+  font-family: inter;
+  font-size: 16px;
+  cursor: pointer;
+}
+.stack__button_svg{
+  margin-top: 2px;
+  width: 15px;
+}
+
+.stack__button:hover{
+  color: rgb(30, 71, 160);
+  transition: 0.3s;
+}

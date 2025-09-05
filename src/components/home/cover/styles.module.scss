@@ -3,14 +3,15 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 864px;
+    height: 700px;
+    background-color: #fefdff;
 }
 
 .Cover__container{
     display: flex;
+    flex-direction: column;
     width: 80%;
     height: 100%;
-    justify-content: center;
 }
 
 .Cover__container img{
@@ -21,7 +22,7 @@
 
 .Cover__info{
     width: 100%;
-    height: 60%;
+    height: 47%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,4 +45,139 @@
     white-space: pre-wrap;
     text-align: center;
     color: rgb(107 114 128);
+}
+
+
+.Cover__button_container{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.Cover__button_container button{
+    width: 224px;
+    height: 50px;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #e5e7eb;
+    outline: none;
+}
+
+.Cover__button_project{
+    background-color: #3b82f6;
+    color: white;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.Cover__button_project:hover{
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.Cover__button_contacts{
+    background-color: white;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+}
+
+.Cover__button_contacts:hover{
+    background-color: #f9fafb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.Cover__cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 46%;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.Cover__cards_code,
+.Cover__cards_design,
+.Cover__cards_education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 341.328px;
+    height: 198px;
+    border-radius: 12px;
+    border: rgb(243, 244, 246) 1px solid;
+}
+
+.Cover__cards_code_svg{
+    width:30px;
+    height: 30px;
+    color: rgb(37, 99, 235)
+}
+.Cover__cards_design_svg{
+    width:30px;
+    height: 30px;
+    color: rgb(147 51 234)
+}
+.Cover__cards_education_svg{
+    width:30px;
+    height: 30px;
+    color: rgb(22 163 74)
+}
+.Cover__cards_code span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(219 234 254);
+    border-radius: 12px;
+}
+
+.Cover__cards_design span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(243 232 255);
+    border-radius: 12px;
+}
+.Cover__cards_education span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(220 252 231);
+    border-radius: 12px;
+}
+
+.Cover__cards_education h2,
+.Cover__cards_design h2,
+.Cover__cards_code h2{
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Cover__cards_education p,
+.Cover__cards_design p,
+.Cover__cards_code p{
+    margin-top: 5px;
+    font-family: 15px;
+    font-weight: 340;
+    text-align: center;
+    white-space: pre-wrap
 }

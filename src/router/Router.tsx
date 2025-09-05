@@ -40,7 +40,7 @@ export const Router = () => {
     };
 
     window.addEventListener('popstate', handlePopState);
-    return () => {
+    return () => { 
       window.removeEventListener('popstate', handlePopState);
       // Восстанавливаем скролл при размонтировании
       document.body.classList.remove('animating');

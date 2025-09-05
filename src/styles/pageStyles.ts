@@ -1,10 +1,20 @@
-// Общие стили для страниц
+// Данные навигации
+export const navigationData = {
+  home: "Главная",
+  about: "Обо мне",
+  skills: "Навыки",
+  project: "Проекты",
+  contacts: "Контакты"
+};
+
+// Общие стили для контента страниц
 export const pageStyles = {
   content: {
     padding: "60px 20px",
     textAlign: "center" as const,
     maxWidth: "1200px",
-    margin: "0 auto"
+    margin: "0 auto",
+    minHeight: "calc(100vh - 60px)" // Учитываем высоту хедера
   },
   title: {
     fontSize: "2.5rem",
@@ -19,13 +29,4 @@ export const pageStyles = {
     margin: "0 auto",
     lineHeight: "1.6"
   }
-};
-
-// Данные навигации
-export const navigationData = {
-  home: "Главная",
-  about: "Обо мне",
-  skills: "Навыки", 
-  project: "Проекты",
-  contacts: "Контакты"
 };
