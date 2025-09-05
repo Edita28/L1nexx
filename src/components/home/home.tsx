@@ -1,5 +1,4 @@
 
-import React from 'react'
 import { Header } from "./header/header";
 import { Cover } from "./cover/cover";
 import { ContentTransition } from "../transitions/ContentTransition";
