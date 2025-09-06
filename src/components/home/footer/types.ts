@@ -1,5 +1,4 @@
 export interface footerProps{
-    classname?: string;
     sectionlink?: sectionlink;
     copyright?: copyright;
 }
