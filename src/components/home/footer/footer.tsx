@@ -11,7 +11,10 @@ const defaultFooterData: footerProps = {
   },
 };
 
-export const Footer: React.FC<footerProps> = (props) => {
+export const Footer: React.FC<footerProps> = (props = defaultFooterData) => {
+    const FooterData = { ...defaultFooterData, ...props };
+    const Footerlink = FooterData.sectionlink;
+    const FooterCopyrigt = FooterData.copyright;
   return (
     <>
       <div className={cl.footer}>
@@ -22,11 +25,13 @@ export const Footer: React.FC<footerProps> = (props) => {
                 <span className={cl.logo}>FD</span>
               </a>
               <a href="./" className={cl.logo__text}>
-                <span>Frontend Developer</span>
+                <span>{Footerlink?.portfolio}</span>
               </a>
             </nav>
           </section>
-          <section className={cl.footer__section_copyright}></section>
+          <section className={cl.footer__section_copyright}>
+            <p>{FooterCopyrigt?.copyrightText}</p>
+          </section>
         </div>
       </div>
     </>
