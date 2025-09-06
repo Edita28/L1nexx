@@ -12,7 +12,6 @@ const defaultFooterData: footerProps = {
 };
 
 export const Footer: React.FC<footerProps> = (props) => {
-  const FooterData = { ...defaultFooterData, ...props };
   return (
     <>
       <div className={cl.footer}>
