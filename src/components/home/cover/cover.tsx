@@ -6,7 +6,7 @@ import type {CoverProps} from './types'
 
 const defaultCoverData: CoverProps = {
     CoverInfo: {
-        nickname: 'L1nexx',
+        nickname: 'Stokeyer',
         job: 'Frontend Developer',
         text: 'Начинающий разработчик с опытом создания современных веб-приложений на \n React, TypeScript, JavaScript, HTML, CSS и SCSS'
     },

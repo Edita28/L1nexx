@@ -3,7 +3,7 @@ import { Header } from "./header/header";
 import { Cover } from "./cover/cover";
 import { ContentTransition } from "../transitions/ContentTransition";
 import { Stack } from './stack/stack'
-
+import { Footer } from "./footer/footer";
 export const Home = () => {
     const headerData = {
         home: "Главная",
@@ -20,6 +20,7 @@ export const Home = () => {
             <ContentTransition delay={300}>
                 <Cover />
                 <Stack/>
+                <Footer/>
             </ContentTransition>
         </div>
     );

@@ -32,30 +32,30 @@ export const Stack: React.FC<StackProps> = (props = defaultStackData) => {
       <h2>{stackInfo?.header}</h2>
       <p>{stackInfo?.cover}</p>
       <div className={cl.stack__container}>
-        <section className={cl.stack__react}>
+        <a href="https://react.dev/"><section className={cl.stack__react}>
           <h3>R</h3>
           <p>{stackInfo?.react}</p>
-        </section>
-        <section className={cl.stack__typescript}>
+        </section></a>
+        <a href="https://www.typescriptlang.org/"><section className={cl.stack__typescript}>
           <h3>T</h3>
           <p>{stackInfo?.typescript}</p>
-        </section>
-        <section className={cl.stack__javascript}>
+        </section></a>
+        <a href="https://javascript.info/"><section className={cl.stack__javascript}>
           <h3>J</h3>
           <p>{stackInfo?.javascript}</p>
-        </section>
-        <section className={cl.stack__html}>
+        </section></a>
+        <a href="https://html.spec.whatwg.org/multipage/"><section className={cl.stack__html}>
           <h3>H</h3>
           <p>{stackInfo?.html5}</p>
-        </section>
-        <section className={cl.stack__css}>
+        </section></a>
+        <a href="https://devdocs.io/css/"><section className={cl.stack__css}>
             <h3>C</h3>
             <p>{stackInfo?.css3}</p>
-        </section>
-        <section className={cl.stack__scss}>
+        </section></a>
+        <a href="https://sass-lang.com/"><section className={cl.stack__scss}>
             <h3>S</h3>
             <p>{stackInfo?.scss}</p>
-        </section>
+        </section></a>
       </div>
       <button onClick={() => handleNavigation('/skills')} className={cl.stack__button}>Подробнее о навыках <svg className={cl.stack__button_svg} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
     </div>
