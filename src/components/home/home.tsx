@@ -16,8 +16,9 @@ export const Home = () => {
 
     return (
         <div>
-            <Header header={headerData} />
+            
             <ContentTransition delay={300}>
+                <Header header={headerData} />
                 <Cover />
                 <Stack/>
                 <Footer/>
