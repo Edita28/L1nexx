@@ -1,6 +1,6 @@
 import React from 'react'
 import cl from './styles.module.scss'
-import avatar from '../../assets/cover/avatar.png'
+import avatar from '../../../assets/cover/avatar.png'
 import type {CoverProps} from './types'
 
 

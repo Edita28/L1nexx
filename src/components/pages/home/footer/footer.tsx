@@ -1,5 +1,5 @@
 import cl from "./styles.module.scss";
-import HhLogo from './../../assets/footer/hh.svg';
+import HhLogo from './../../../assets/footer/hh.svg';
 import type { footerProps } from "./types";
 
 const defaultFooterData: footerProps = {

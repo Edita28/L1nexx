@@ -1,4 +1,4 @@
-import { Header } from "../home/header/header";
+import { Header } from "./home/header/header.tsx";
 import { ContentTransition } from "../transitions/ContentTransition";
 import cl from "../transitions/styles.module.scss";
 

@@ -1,7 +1,7 @@
 
 import { Header } from "./header/header";
 import { Cover } from "./cover/cover";
-import { ContentTransition } from "../transitions/ContentTransition";
+import { ContentTransition } from "../../transitions/ContentTransition";
 import { Stack } from './stack/stack'
 import { Footer } from "./footer/footer";
 export const Home = () => {
@@ -19,7 +19,7 @@ export const Home = () => {
             
             <ContentTransition delay={300}>
                 <Header header={headerData} />
-                <Cover />
+                <Cover/>
                 <Stack/>
                 <Footer/>
             </ContentTransition>
