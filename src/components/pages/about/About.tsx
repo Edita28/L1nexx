@@ -1,6 +1,5 @@
 import { Header } from "../home/header/header.tsx";
 import { Cover } from "../about/cover/cover.tsx"
-import { Footer } from "../home/footer/footer.tsx";
 import { ContentTransition } from "../../transitions/ContentTransition.tsx";
 
 const headerData = {
