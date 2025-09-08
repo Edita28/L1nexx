@@ -38,8 +38,9 @@
 .Cover__section{
     display: flex;
     flex-direction: row;
-    width: 55%;
+    width: 50%;
     height: 900px;
+    margin-top: 35px;
 }
 
 .Cover__information{
@@ -50,4 +51,154 @@
 .Cover__cards{
     width: 25%;
     height: 100%;
+}
+
+.Cover__information h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.Cover__information_container p {
+    font-size: 15px;
+    white-space: pre-wrap;
+    text-align: left;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 15px;
+    
+}
+
+.Cover__information_container  {
+    width: 550px;
+    height: 430px;
+    border-radius: 12px;
+    background-color: rgb(249, 250, 251);
+    margin-top: 20px;
+}
+
+.Cover__cards_facts{
+    width: 245.328px;
+    height: 382px;
+    background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1024px) {
+    .Cover__section {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .Cover__information {
+        width: 100%;
+        height: auto;
+    }
+
+    .Cover__information_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .Cover__cards {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .Cover__cards_facts {
+        width: 100%;
+        height: auto;
+    }
+
+    .Cover__container h2 {
+        font-size: 30px;
+    }
+
+    .Cover__container p {
+        font-size: 18px;
+    }
+
+    .Cover__information h2 {
+        font-size: 20px;
+    }
+
+    .Cover__information_container p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Cover__container {
+        width: 90%;
+    }
+
+    .Cover__section {
+        width: 100%;
+    }
+
+    .Cover__container h2 {
+        font-size: 24px;
+    }
+
+    .Cover__container p {
+        font-size: 16px;
+    }
+
+    .Cover__information h2 {
+        font-size: 18px;
+    }
+
+    .Cover__information_container p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Cover__container {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .Cover__section {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .Cover__information {
+        width: 100%;
+    }
+
+    .Cover__information_container {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .Cover__cards {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .Cover__container h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .Cover__container p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .Cover__information h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Cover__information_container p {
+        font-size: 12px;
+        text-align: left;
+        padding: 10px;
+    }
 }
