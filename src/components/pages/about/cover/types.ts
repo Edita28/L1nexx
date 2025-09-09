@@ -3,6 +3,8 @@ export interface CoverProps{
     CoverHeader?: CoverHeader;
     CoverInfo?: CoverInfo;
     CoverCards?: CoverCards;
+    CoverMotivation?: CoverMotivation;
+    CoverReady?: CoverReady;
 }
 
 export interface CoverHeader{
@@ -17,8 +19,16 @@ export interface CoverInfo{
     CoverInfo__text_3: string;
 }
 
+export interface CoverMotivation {
+    heading: string;
+    CoverMotivation__First: string;
+    CoverMotivation__Second: string;
+    CoverMotivation__Third: string;
+    CoverMotivation__Fourth: string;
+}
+
 export interface CoverCards{
-    header: string;
+    heading: string;
     location: string;
     locationInfo: string;
     experience: string;
@@ -27,4 +37,12 @@ export interface CoverCards{
     educationInfo: string
     language: string;
     languageInfo: string;
+}
+
+export interface CoverReady{
+    heading: string;
+    information: string;
+    intern: string;
+    education: string;
+    team: string;
 }
