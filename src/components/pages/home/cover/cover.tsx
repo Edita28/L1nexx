@@ -48,17 +48,17 @@ export const Cover: React.FC<CoverProps> = (props = defaultCoverData) => {
                 </div>
                 <div className={cl.Cover__cards}>
                     <div className={cl.Cover__cards_code}>
-                        <span><svg className={cl.Cover__cards_code_svg} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></span>
+                        <span><svg className={cl.Cover__cards_code_svg} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></span>
                         <h2>{coverCards?.title_code}</h2>
                         <p>{coverCards?.info_code}</p>
                     </div>
                     <div className={cl.Cover__cards_design}>
-                        <span><svg className={cl.Cover__cards_design_svg} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg></span>
+                        <span><svg className={cl.Cover__cards_design_svg} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg></span>
                         <h2>{coverCards?.title_design}</h2>
                         <p>{coverCards?.info_design}</p>
                     </div>
                     <div className={cl.Cover__cards_education}>
-                        <span><svg className={cl.Cover__cards_education_svg} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></span>
+                        <span><svg className={cl.Cover__cards_education_svg} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></span>
                         <h2>{coverCards?.title_education}</h2>
                         <p>{coverCards?.info_education}</p>
                     </div>
