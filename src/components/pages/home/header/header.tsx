@@ -36,6 +36,17 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
   }, [activeItem]);
 
   useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
     const currentPath = window.location.pathname;
     
     if (currentPath.includes('/about')) {
@@ -89,7 +100,6 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
           <a href="./" className={cl.logo__text}><span>Frontend Developer</span></a>
         </nav>
         
-        {/* Бургер-меню кнопка */}
         <button 
           className={`${cl.burger} ${isMobileMenuOpen ? cl.burger_active : ''}`}
           onClick={toggleMobileMenu}
@@ -100,7 +110,6 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
           <span></span>
         </button>
 
-        {/* Десктопное меню */}
         <section className={cl.header__section}>
           <ul>
             {renderNavItem("home", "./", headerData.header.home)}
