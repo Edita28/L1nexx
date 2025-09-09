@@ -1,6 +1,8 @@
 import { Header } from "../home/header/header.tsx";
 import { Cover } from "../about/cover/cover.tsx"
 import { ContentTransition } from "../../transitions/ContentTransition.tsx";
+import { RoadMap } from "./roadmap/roadmap.tsx";
+import { Footer } from "../home/footer/footer.tsx";
 
 const headerData = {
   home: "Главная",
@@ -17,7 +19,8 @@ export const About = () => {
       <ContentTransition delay={300}>
         <Header header={headerData}/>
         <Cover/>
-        {/*<Footer/>*/}
+        <RoadMap/>
+        <Footer/>
       </ContentTransition>
     </div>
   );

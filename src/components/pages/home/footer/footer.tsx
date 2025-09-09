@@ -18,7 +18,7 @@ export const Footer: React.FC<footerProps> = (props = defaultFooterData) => {
     const FooterCopyrigt = FooterData.copyright;
     return (
         <>
-            <div className={cl.footer}>
+            <div className={`${cl.footer} ${FooterData.className || ''}`}>
                 <div className={cl.footer__container}>
                     <section className={cl.footer__section_link}>
                         <nav>

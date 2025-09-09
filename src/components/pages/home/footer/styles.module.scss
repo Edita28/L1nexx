@@ -86,3 +86,25 @@
 
 
 }
+
+@media (max-width: 480px) {
+    .footer{
+        margin-top: 30px;
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .footer__section_link{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer__section_link nav a {
+        font-size: 15px;
+    }
+
+
+}

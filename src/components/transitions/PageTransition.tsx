@@ -51,8 +51,7 @@ export const PageTransition: React.FC<PageTransitionProps> = ({
 
   return (
     <div 
-      className={`${cl.pageTransition} ${isVisible ? cl.visible : cl.hidden}`}
-    >
+      className={`${cl.pageTransition} ${isVisible ? cl.visible : cl.hidden}`}>
       {children}
     </div>
   );

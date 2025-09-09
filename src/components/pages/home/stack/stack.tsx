@@ -57,7 +57,7 @@ export const Stack: React.FC<StackProps> = (props = defaultStackData) => {
             <p>{stackInfo?.scss}</p>
         </section></a>
       </div>
-      <button onClick={() => handleNavigation('/skills')} className={cl.stack__button}>Подробнее о навыках <svg className={cl.stack__button_svg} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
+      <button onClick={() => handleNavigation('/skills')} className={cl.stack__button}>Подробнее о навыках <svg className={cl.stack__button_svg} fill="none" stroke-linecap="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
     </div>
   );
 };
