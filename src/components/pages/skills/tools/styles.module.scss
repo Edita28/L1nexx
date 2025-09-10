@@ -1,4 +1,4 @@
-.frontend {
+.tools {
     display: flex;
     margin-top: 50px;
     justify-content: center;
@@ -6,7 +6,7 @@
     height: auto; /* Changed to auto for responsiveness */
 }
 
-.frontend__container {
+.tools__container {
     display: flex;
     width: 95%; /* Default for extra small screens */
     max-width: 1050px; /* Max width for larger screens */
@@ -18,7 +18,7 @@
         rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
-.frontend__container h2 {
+.tools__container h2 {
     padding: 20px;
     font-size: 20px; /* Adjusted default font size */
     font-weight: 750;
@@ -26,7 +26,7 @@
     text-align: center; /* Added for better mobile presentation */
 }
 
-.frontend__section {
+.tools__section {
     display: grid;
     width: auto;
     height: auto;
@@ -37,7 +37,7 @@
     margin: 0px 20px 20px 20px; /* Adjusted margin for small screens */
 }
 
-.frontend__section div {
+.tools__section div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -45,17 +45,17 @@
     height: auto;
 }
 
-.frontend__section div p {
+.tools__section div p {
     color: rgb(75, 85, 99);
     font-size: 14px;
 }
 
-.frontend__section div nav {
+.tools__section div nav {
     display: flex;
     justify-content: space-between;
 }
 
-.frontend__section div nav p {
+.tools__section div nav p {
     color: rgb(107, 114, 128);
     font-size: 14px;
     font-weight: 500px;
@@ -68,8 +68,8 @@
     border-radius: 9999px;
 }
 
-.Progress__line_html {
-    width: 90%;
+.Progress__line_git {
+    width: 70%;
     height: 8px;
     background-image: linear-gradient(to right,
             rgb(37, 99, 235),
@@ -77,8 +77,8 @@
     border-radius: 9999px;
 }
 
-.Progress__line_css {
-    width: 85%;
+.Progress__line_webpack {
+    width: 60%;
     height: 8px;
     background-image: linear-gradient(to right,
             rgb(37, 99, 235),
@@ -86,7 +86,16 @@
     border-radius: 9999px;
 }
 
-.Progress__line_sass {
+.Progress__line_vite {
+    width: 75%;
+    height: 8px;
+    background-image: linear-gradient(to right,
+            rgb(37, 99, 235),
+            rgb(147, 51, 234));
+    border-radius: 9999px;
+}
+
+.Progress__line_npm {
     width: 80%;
     height: 8px;
     background-image: linear-gradient(to right,
@@ -95,7 +104,16 @@
     border-radius: 9999px;
 }
 
-.Progress__line_javaScript {
+.Progress__line_vsCode {
+    width: 90%;
+    height: 8px;
+    background-image: linear-gradient(to right,
+            rgb(37, 99, 235),
+            rgb(147, 51, 234));
+    border-radius: 9999px;
+}
+
+.Progress__line_chromeDevTools {
     width: 75%;
     height: 8px;
     background-image: linear-gradient(to right,
@@ -104,96 +122,78 @@
     border-radius: 9999px;
 }
 
-.Progress__line_typeScript {
-    width: 65%;
-    height: 8px;
-    background-image: linear-gradient(to right,
-            rgb(37, 99, 235),
-            rgb(147, 51, 234));
-    border-radius: 9999px;
-}
-
-.Progress__line_react {
-    width: 75%;
-    height: 8px;
-    background-image: linear-gradient(to right,
-            rgb(37, 99, 235),
-            rgb(147, 51, 234));
-    border-radius: 9999px;
-}
-
-.frontend__section div h3 {
+.tools__section div h3 {
     font-weight: 550;
     font-size: 16px;
 }
 
 
 @media (min-width: 480px) {
-    .frontend__container {
+    .tools__container {
         width: 90%;
     }
-    .frontend__container h2 {
+    .tools__container h2 {
         font-size: 22px;
     }
-    .frontend__section {
+    .tools__section {
         margin: 0px 25px 25px 25px;
         grid-row-gap: 30px;
         grid-column-gap: 10px;
     }
-    .frontend__section div p {
+    .tools__section div p {
         font-size: 15px;
     }
-    .frontend__section div nav p {
+    .tools__section div nav p {
         font-size: 15px;
     }
-    .frontend__section div h3 {
+    .tools__section div h3 {
         font-size: 17px;
     }
 }
 
 
 @media (min-width: 768px) {
-    .frontend__container {
+    .tools__container {
         width: 80%;
     }
-    .frontend__container h2 {
+    .tools__container h2 {
         padding: 30px;
         font-size: 26px;
         text-align: left;
     }
-    .frontend__section {
+    .tools__section {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         margin-left: 30px;
     }
-    .frontend__section div {
+    .tools__section div {
         width: auto;
         height: 80px;
     }
-    .frontend__section div p {
+    .tools__section div p {
         font-size: 14px;
     }
-    .frontend__section div nav p {
+    .tools__section div nav p {
         font-size: 14px;
     }
-    .frontend__section div h3 {
+    .tools__section div h3 {
         font-size: 18px;
     }
 }
 
 @media (min-width: 1024px) {
-    .frontend__container {
+    .tools__container {
         width: 70%;
     }
-    .frontend__container h2 {
+    .tools__container h2 {
         font-size: 28px;
     }
 }
 
 
 @media (min-width: 1440px) {
-    .frontend__container {
+    .tools__container {
         width: 1050px;
     }
 }

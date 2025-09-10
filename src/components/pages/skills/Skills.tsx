@@ -2,6 +2,7 @@ import { Header } from "../home/header/header.tsx";
 import { ContentTransition } from "../../transitions/ContentTransition.tsx";
 import { MyTechSkills } from "./MyTechHeading/MyTechHeading.tsx";
 import { FrontendTech } from './frontendTech/frontend.tsx'
+import { Tools } from "./tools/tools.tsx";
 
 const headerData = {
   home: "Главная",
@@ -19,6 +20,7 @@ export const Skills = () => {
            <Header header={headerData} />
            <MyTechSkills/>
            <FrontendTech/>
+           <Tools/>
         </ContentTransition>
     </div>
   );

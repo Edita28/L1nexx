@@ -34,10 +34,10 @@ export const FrontendTech: React.FC<FrontendProps> = (props = defaultTechnologie
 
     return (
         <>
-            <div className={cl.technologies}>
-                <div className={cl.technologies__container}>
+            <div className={cl.frontend}>
+                <div className={cl.frontend__container}>
                     <h2>{Frontend?.heading}</h2>
-                    <section className={cl.technologies__section}>
+                    <section className={cl.frontend__section}>
                         <div>
                             <nav>
                                 <h3>{Frontend?.html5}</h3>
