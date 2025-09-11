@@ -39,7 +39,7 @@ export const Design: React.FC<designProps> = (props = defaultDesignData ) =>{
                                 <p>{design?.resDesignPercent}</p>
                             </nav>
                             <section className={cl.Progress__line_gray}>
-                                <section className={cl.Progress__line_git}></section>
+                                <section className={cl.Progress__line_resDesign}></section>
                             </section>
                             <p>{designInfo?.resDesignInfo}</p>
                         </div>
@@ -49,7 +49,7 @@ export const Design: React.FC<designProps> = (props = defaultDesignData ) =>{
                                 <p>{design?.cssFramePercent}</p>
                             </nav>
                             <section className={cl.Progress__line_gray}>
-                                <section className={cl.Progress__line_webpack}></section>
+                                <section className={cl.Progress__line_cssFrame}></section>
                             </section>
                             <p>{designInfo?.cssFrameInfo}</p>
                         </div>
@@ -59,7 +59,7 @@ export const Design: React.FC<designProps> = (props = defaultDesignData ) =>{
                                 <p>{design?.uiPercent}</p>
                             </nav>
                             <section className={cl.Progress__line_gray}>
-                                <section className={cl.Progress__line_vite}></section>
+                                <section className={cl.Progress__line_ui}></section>
                             </section>
                             <p>{designInfo?.uiInfo}</p>
                         </div>
@@ -69,7 +69,7 @@ export const Design: React.FC<designProps> = (props = defaultDesignData ) =>{
                                 <p>{design?.figmaPercent}</p>
                             </nav>
                             <section className={cl.Progress__line_gray}>
-                                <section className={cl.Progress__line_npm}></section>
+                                <section className={cl.Progress__line_figma}></section>
                             </section>
                             <p>{designInfo?.figmaInfo}</p>
                         </div>
