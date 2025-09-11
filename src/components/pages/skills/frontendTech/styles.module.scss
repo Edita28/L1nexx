@@ -3,14 +3,14 @@
     margin-top: 50px;
     justify-content: center;
     width: 100%;
-    height: auto; /* Changed to auto for responsiveness */
+    height: auto;
 }
 
 .frontend__container {
     display: flex;
-    width: 95%; /* Default for extra small screens */
-    max-width: 1050px; /* Max width for larger screens */
-    height: auto; /* Changed to auto for responsiveness */
+    width: 95%;
+    max-width: 1050px;
+    height: auto;
     flex-direction: column;
     border-radius: 8px;
     border: rgb(229, 231, 235) 1px solid;
@@ -20,28 +20,27 @@
 
 .frontend__container h2 {
     padding: 20px;
-    font-size: 20px; /* Adjusted default font size */
+    font-size: 20px;
     font-weight: 750;
     color: rgb(17, 24, 39);
-    text-align: center; /* Added for better mobile presentation */
+    text-align: center;
 }
 
 .frontend__section {
     display: grid;
     width: auto;
     height: auto;
-    grid-template-columns: repeat(1, 1fr); /* Default to single column for small screens */
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 20px;
-    margin: 0px 20px 20px 20px; /* Adjusted margin for small screens */
+    margin: 0px 20px 20px 20px;
 }
-
 .frontend__section div {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%; /* Full width for small screens */
+    width: 100%;
     height: auto;
 }
 

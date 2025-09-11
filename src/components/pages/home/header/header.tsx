@@ -120,7 +120,6 @@ export const Header: React.FC<HeaderProps> = (props = defaultHeaderData) => {
           </ul>
         </section>
 
-        {/* Мобильное меню */}
         <div className={`${cl.mobile__menu} ${isMobileMenuOpen ? cl.mobile__menu_open : ''}`}>
           <ul>
             {renderNavItem("home", "./", headerData.header.home)}

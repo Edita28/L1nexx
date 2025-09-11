@@ -5,7 +5,7 @@ import { Skills } from '../components/pages/skills/Skills';
 import { Projects } from '../components/pages/Projects';
 import { Contacts } from '../components/pages/Contacts';
 import { PageTransition } from '../components/transitions/PageTransition';
-import { NotFound } from '../components/pages/notFound/NotFound'; // Импортируем NotFound
+import { NotFound } from '../components/pages/NotFound/NotFound';
 
 const ROUTES: { [key: string]: React.ComponentType } = {
   '/': Home,
@@ -47,7 +47,7 @@ export const Router = () => {
 
   const getCurrentComponent = () => {
     const Component = ROUTES[currentPath];
-    return Component ? <Component /> : <NotFound />; // Возвращаем NotFound при отсутствии совпадений
+    return Component ? <Component /> : <NotFound />;
   };
 
   return (
