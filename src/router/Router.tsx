@@ -22,11 +22,6 @@ export const Router = () => {
   useEffect(() => {
     const handlePopState = () => {
       setIsTransitioning(true);
-      document.body.classList.add('animating');
-      document.body.style.overflow = 'hidden';
-      document.body.style.height = '100vh';
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
       
       setTimeout(() => {
         setCurrentPath(window.location.pathname);
@@ -37,11 +32,6 @@ export const Router = () => {
     window.addEventListener('popstate', handlePopState);
     return () => { 
       window.removeEventListener('popstate', handlePopState);
-      document.body.classList.remove('animating');
-      document.body.style.overflow = '';
-      document.body.style.height = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
     };
   }, [currentPath]);
 

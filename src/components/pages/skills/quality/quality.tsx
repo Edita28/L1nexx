@@ -3,7 +3,7 @@ import type {QualityProps} from './types'
 
 
 const defaultQualityData: QualityProps = {
-
+    
 }
 
 export const Quality: React.FC<QualityProps> = () => {

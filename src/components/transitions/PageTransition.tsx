@@ -17,18 +17,7 @@ export const PageTransition: React.FC<PageTransitionProps> = ({
   useEffect(() => {
     if (isVisible) {
       setShouldRender(true);
-      document.body.classList.remove('animating');
-      document.body.style.overflow = '';
-      document.body.style.height = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
     } else {
-      document.body.classList.add('animating');
-      document.body.style.overflow = 'hidden';
-      document.body.style.height = '100vh';
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
-
       const timer = setTimeout(() => {
         setShouldRender(false);
         onAnimationComplete?.();
@@ -39,11 +28,6 @@ export const PageTransition: React.FC<PageTransitionProps> = ({
 
   useEffect(() => {
     return () => {
-      document.body.classList.remove('animating');
-      document.body.style.overflow = '';
-      document.body.style.height = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
     };
   }, []);
 
