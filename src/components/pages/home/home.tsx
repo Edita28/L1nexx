@@ -16,7 +16,6 @@ export const Home = () => {
 
     return (
         <div>
-            
             <ContentTransition delay={300}>
                 <Header header={headerData} />
                 <Cover/>
