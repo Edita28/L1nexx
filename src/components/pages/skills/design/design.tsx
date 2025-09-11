@@ -66,7 +66,7 @@ export const Design: React.FC<designProps> = (props = defaultDesignData ) =>{
                         <div>
                             <nav>
                                 <h3>{design?.figma}</h3>
-                                <p>{design?.figma}</p>
+                                <p>{design?.figmaPercent}</p>
                             </nav>
                             <section className={cl.Progress__line_gray}>
                                 <section className={cl.Progress__line_npm}></section>
