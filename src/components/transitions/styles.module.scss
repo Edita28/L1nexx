@@ -12,32 +12,32 @@
 }
 
 .pageTransition.visible {
-  animation: slideInFromBottom 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: slideInFromRight 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .pageTransition.hidden {
-  animation: slideOutToBottom 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: slideOutToLeft 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-@keyframes slideInFromBottom {
+@keyframes slideInFromRight {
   0% {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateX(15px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-@keyframes slideOutToBottom {
+@keyframes slideOutToLeft {
   0% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
   100% {
     opacity: 0;
-    transform: translateY(-15px);
+    transform: translateX(-15px);
   }
 }
 
@@ -197,13 +197,11 @@ body.animating {
   width: 100% !important;
 }
 
-/* Дополнительные стили для предотвращения скроллов */
 .pageTransition * {
   max-width: 100%;
   box-sizing: border-box;
 }
 
-/* Ограничение анимаций в пределах viewport */
 .pageTransition,
 .fadeTransition,
 .scaleTransition {
